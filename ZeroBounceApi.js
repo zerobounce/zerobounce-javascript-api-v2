@@ -26,7 +26,7 @@ class ZeroBounceApi {
          * @return - a JSONObject with all of the information for the specified email
          * */
         this.validate = function(email, ip_address){
-            var uri = baseUrl + "/validate" + "?api_key=" + apiKey + "&email=" + email + "&ip_address=" + ip_address;
+            var uri = baseUrl + "/validate" + "?api_key=" + apiKey + "&email=" + encodeURIComponent(email) + "&ip_address=" + ip_address;
             get.open('GET', uri, false);
             get.send();
             if (get.readyState == 4 && get.status == 200) {
