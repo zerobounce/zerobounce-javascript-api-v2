@@ -18,7 +18,7 @@ ZeroBounceApi.validate("some@email.com")
 |:--- |:--- 
 address  | The email address you are validating. 
 status | valid /invalid /catch-all /unknown /spamtrap /abuse /do_not_mail 
-sub_status  |antispam_system /greylisted /mail_server_temporary_error /forcible_disconnect /mail_server_did_not_respond /timeout_exceeded /failed_smtp_connection /mailbox_quota_exceeded /exception_occurred /possible_traps /role_based /global_suppression /mailbox_not_found /no_dns_entries /failed_syntax_check /possible_typo /unroutable_ip_address /leading_period_removed /does_not_accept_mail /role_based_catch_all /disposable /toxic
+sub_status  |antispam_system /greylisted /mail_server_temporary_error /forcible_disconnect /mail_server_did_not_respond /timeout_exceeded /failed_smtp_connection /mailbox_quota_exceeded /exception_occurred /possible_trap /role_based /global_suppression /mailbox_not_found /no_dns_entries /failed_syntax_check /possible_typo /unroutable_ip_address /leading_period_removed /does_not_accept_mail /role_based_catch_all /disposable /toxic
 account | The portion of the email address before the "@" symbol.
 domain | The portion of the email address after the "@" symbol.
 did_you_mean | Suggestive Fix for an email typo.
